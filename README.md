@@ -11,4 +11,4 @@ Implement user character creation, user json file for presets
 
 # Goal 3 
 
-Implement enemies and combat system test test
+Implement enemies and combat system
