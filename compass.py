@@ -20,3 +20,7 @@ def compassDistance (userX, userY, chestX, chestY):
     deltaX = abs(chestX - userX)
 
     return hypot(deltaX, deltaY)
+
+if __name__ == "__main__":
+    print("This file should only be imported and not called directly, please run endless_swamp.py")
+    exit
