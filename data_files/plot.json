@@ -1,8 +1,15 @@
-[
+{
+  "chapter-1": [
     {
-      "point": "chief"
+      "point": "Welcome to the endless swamp, a place of infantismal sludge as far as the eye can see.\nThe jolly wagon driver waved goodbye before whipping the mule. 'Good luck on your hunt %s' he shouted"
     },
     {
       "point": "chief2"
     }
+  ],
+  "chapter-2": [
+    {
+      "point": "chief3"
+    }
   ]
+}
