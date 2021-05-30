@@ -9,9 +9,12 @@ def main():
     while True:
         direction = input("Which direction would you like to go: ")
         direction = direction.lower()
-        if direction == "west" or direction == "east" or direction == "north" or direction == "south":
-            travelling(direction, user)
-            print(user.xCoordinates + user.yCoordinates)
+        if direction == "west" or direction == "east":
+            user.xCoordinates = travelling(direction, user)
+            print(str(user.xCoordinates) + " " + str(user.yCoordinates))
+        elif direction == "north" or direction == "south":
+            user.yCoordinates = travelling(direction, user)
+            print(str(user.xCoordinates) + " " + str(user.yCoordinates))
         else:
             exit
     # print(''' 
