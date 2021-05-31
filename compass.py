@@ -1,8 +1,9 @@
 from math import atan2, hypot, pi
 
-def compassDirection (userX, userY, chestX, chestY):
-    deltaY = chestY - userY
-    deltaX = chestX - userX
+def compassDirection (User, chest):
+    
+    deltaY = chest.chestY - User.yCoordinates
+    deltaX = chest.chestX - User.xCoordinates
     
     degreesTemp = atan2(deltaY, deltaX)/pi*180
     
@@ -15,9 +16,9 @@ def compassDirection (userX, userY, chestX, chestY):
     compassLookup = round(degreesFinal/45)
     return compassBrackets[compassLookup]
 
-def compassDistance (userX, userY, chestX, chestY):
-    deltaY = abs(chestY - userY)
-    deltaX = abs(chestX - userX)
+def compassDistance (User, chest):
+    deltaY = abs(chest.chestY - User.yCoordinates)
+    deltaX = abs(chest.chestX - User.xCoordinates)
 
     return hypot(deltaX, deltaY)
 

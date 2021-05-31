@@ -1,7 +1,7 @@
 class Chest:
-    def __init__(self):
-        self._chestX
-        self._chestY
+    def __init__(self, chestX = 0, chestY = 0):
+        self._chestX = chestX
+        self._chestY = chestY
         
     @property
     def chestX(self):
