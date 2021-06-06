@@ -14,11 +14,11 @@ def travelling(direction, User):
 
     def goEast(User):
         xlocation = User.xCoordinates
-        return xlocation - 1
+        return xlocation + 1
 
     def goWest(User):
         xlocation = User.xCoordinates
-        return xlocation + 1
+        return xlocation - 1
 
     def noMovement():
         try:
@@ -38,7 +38,6 @@ def travelling(direction, User):
         except ValueError:
             print("Json plot file could not be read properly")
             exit
-    print("help")
     switch = {
         'north': goNorth(User),
         'south': goSouth(User),
