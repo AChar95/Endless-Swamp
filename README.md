@@ -1,7 +1,7 @@
 # Endless-Swamp
 A simple python program that simulates the user in an endless swamp looking for treasure
 
-# Goal 1
+# Goal 1 &checkmark;
 
 User must be able to find the chest, the compass must supply distance and direction to help the user find the chest
 
