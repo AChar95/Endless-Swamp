@@ -1,4 +1,4 @@
-from random import expovariate, randint, randrange
+from random import randint
 from win_mechanic import winMechanic
 from user import User
 from plot import plot
