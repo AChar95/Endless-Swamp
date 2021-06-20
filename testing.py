@@ -2,6 +2,7 @@ import unittest
 from user import User
 from chest import Chest
 from compass import compassDirection, compassDistance
+from movement import travelling
 
 class TestingUserMethod(unittest.TestCase):
     
@@ -44,6 +45,11 @@ class TestingUserMethod(unittest.TestCase):
         chest = Chest(3,5)
         user = User('Keiran',0,0)
         self.assertEqual(compassDistance(user,chest),6)
+    
+    def testUserImport(self):
+        user = User('Keiran',0,0)
+        self.assertEqual(travelling('north', user), 1)
+    
         
 if __name__ == '__main__':
     unittest.main()
