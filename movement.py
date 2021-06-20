@@ -1,4 +1,3 @@
-from user import User
 from random import randint
 import json
 
