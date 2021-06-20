@@ -23,9 +23,10 @@ def travelling(direction, User):
         try:
             stationaryAction = open('./data_files/stationary_action.json', 'r')
             actionExtractor = json.load(stationaryAction)
-            if len(actionExtractor) > 0:
-                randomNumber = randint(0, len(actionExtractor))
-                action = actionExtractor[randomNumber]["action"]
+            if len(actionExtractor["actions"]) > 0:
+                randomNumber = randint(0, len(actionExtractor["actions"])-1)
+                print(randomNumber)
+                action = actionExtractor["actions"][randomNumber]["supported_actions"]
                 print("You continue to stand still")
                 print(action)
             else:
@@ -33,10 +34,10 @@ def travelling(direction, User):
                 "Random Action catalogue file (stationary_action.json is not formated correctly")
         except IOError:
             print("Plot file cannot be found")
-            exit
+            exit()
         except ValueError:
             print("Json plot file could not be read properly")
-            exit
+            exit()
     switch = {
         'north': goNorth(User),
         'south': goSouth(User),
@@ -44,4 +45,4 @@ def travelling(direction, User):
         'west': goWest(User)
     }
 
-    return switch.get(direction, noMovement)
+    return switch.get(direction, noMovement())

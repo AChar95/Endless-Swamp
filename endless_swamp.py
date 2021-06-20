@@ -21,6 +21,7 @@ def main():
             user.yCoordinates = travelling(direction, user)
         else:
             print("%s is not supported direction" %(direction))
+            travelling(direction, user)
         print(str(user.xCoordinates) + " " + str(user.yCoordinates))
         print(str(compassDistance(user, chest)) + " " + str(compassDirection(user, chest)))
         winMechanic(compassDistance(user, chest))
