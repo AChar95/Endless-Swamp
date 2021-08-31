@@ -30,8 +30,7 @@ def travelling(direction, User):
                 print("You continue to stand still")
                 print(action)
             else:
-                print(
-                "Random Action catalogue file (stationary_action.json is not formated correctly")
+                print("Random Action catalogue file (stationary_action.json) is not formated correctly\rAttempting to pull latest version from 'https://github.com/AChar95/Endless-Swamp'")
         except IOError:
             print("Plot file cannot be found")
             exit()

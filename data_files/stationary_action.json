@@ -1,10 +1,13 @@
 {
     "actions":[
         {
-            "supported_actions" :"You look around, the swamp is endless, \nbut your sight is restricted by the light mist that lingers and snakes around the towering trees.\nThe mist crested at head height, its smokey tendrils reached up trying to grab the low lying branches"
+            "supported_actions" :"You look around, the swamp is endless, \nbut your sight is restricted by the light mist that lingers and snakes around the towering trees.\nThe mist crests at head height, its smokey tendrils reached up trying to grab the low lying branches"
         },
         {
-            "supported_actions" :"You lift each foot up as you try to stop yourself \nsinking too deep into the in the water logged mud. You can feel the cold seeping in "
+            "supported_actions" :"You lift each foot up as you try to stop yourself \nsinking too deep into the in the water logged mud. You can feel the cold seeping in through your clothes, you can't remain standing much longer"
+        },
+        {
+            "supported_actions": "You adjust your bracers, tightening up the lace. \nYou can feel the material tearing slightly at the hoops "
         }
     ]
 }
