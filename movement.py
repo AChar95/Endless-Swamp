@@ -1,5 +1,5 @@
 from random import randint
-import json
+import json, requests
 
 
 def travelling(direction, User):
@@ -31,6 +31,11 @@ def travelling(direction, User):
                 print(action)
             else:
                 print("Random Action catalogue file (stationary_action.json) is not formated correctly\rAttempting to pull latest version from 'https://github.com/AChar95/Endless-Swamp'")
+                url = "https://raw.githubusercontent.com/AChar95/Endless-Swamp/main/data_files/stationary_action.json"
+                r = requests.get(url)
+                with open('./data_files/stationary_action.json', 'wb') as f:
+                    f.write(r.content)
+                    f.close()
         except IOError:
             print("Plot file cannot be found")
             exit()
